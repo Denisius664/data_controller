@@ -1,2 +1,2 @@
-# greep_mind_v0
-My first idea for IoT
+# data_controller
+My first idea for control my data from different sites
