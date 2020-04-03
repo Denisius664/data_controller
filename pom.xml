@@ -13,6 +13,7 @@
     <version>0.0.4</version>
     <name>data_controller</name>
     <description>App for controll data in different networl and localservices</description>
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>11</java.version>
