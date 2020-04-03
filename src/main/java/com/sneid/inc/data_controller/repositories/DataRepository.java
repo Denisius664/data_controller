@@ -7,6 +7,12 @@ import java.util.List;
 
 public interface DataRepository extends JpaRepository<Data, Long> {
 
-    List<Data> findByContentContains(String content);
+    List<Data> findByContentContains(String piece_content);
+
+    List<Data> findByTitleContains(String piece_title);
+
+    List<Data> findFirst10ByContentContains(String piece_content);
+
+    List<Data> findFirst10ByTitleContains(String piece_title);
 
 }

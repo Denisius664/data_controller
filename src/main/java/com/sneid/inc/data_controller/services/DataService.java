@@ -29,7 +29,20 @@ public class DataService {
         return dataRepository.findAll();
     }
 
-    public List<Data> findByContentContains(String piece_of_content){
-        return dataRepository.findByContentContains(piece_of_content);
+    public List<Data> findByContentContains(String piece_content){
+        return dataRepository.findByContentContains(piece_content);
     }
+
+    public List<Data> findFirst10ByContentContains(String piece_content){
+        return dataRepository.findFirst10ByContentContains(piece_content);
+    }
+
+    public List<Data> findByTitleContains(String piece_title){
+        return dataRepository.findByTitleContains(piece_title);
+    }
+
+    public List<Data> findFirst10ByTitleContains(String piece_title){
+        return dataRepository.findFirst10ByTitleContains(piece_title);
+    }
+
 }
